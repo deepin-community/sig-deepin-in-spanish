@@ -1,30 +1,30 @@
-## 小组静态网站模板
+## Group static website template
 
-为了方便各个小组进行小组活动的信息公示，我们使用了 [HUGO](https://gohugo.io/) 作为文章平台工具，进行博客文章的静态生成，并最终利用 GitHub Pages 呈现网页，为小组提供了一个单独的页面来展示呈现所需要公示的各种信息。故整个过程你只需按照 HUGO 的正常使用方式进行使用即可。
+To make it easier for groups to post information about their activities, we used [HUGO](https://gohugo.io/) as the article platform tool to statically generate blog posts and eventually use GitHub Pages to render the pages, providing a separate page for groups to display the information they need to post. Therefore, you only need to follow the normal way of using HUGO for the whole process.
 
-若未安装 HUGO，您可以从 [HUGO 官方 GitHub 仓库的 Release 页面](https://github.com/gohugoio/hugo/releases)获取适用于您设备的 HUGO 版本，并放置其于 PATH 内以便调用。
+If you don't have HUGO installed, you can get the HUGO version for your device from the [Release page of the official HUGO GitHub repository](https://github.com/gohugoio/hugo/releases) and place it in the PATH for invocation.
 
-安装就绪后，大致常用命令如下（在此源码仓库的根目录下执行）：
+Once the installation is ready, the general common commands are as follows (executed in the root directory of this source code repository).
 
 ```
-$ hugo server # 启动一个本地服务器，预览目前状态下的网站内容
-$ hugo new posts/my-post.md # 创建一篇新文章，以便进行编辑
-$ hugo server -D # 启用本地服务器，并且能够预览状态为草稿（`draft: true`）的文章
-$ hugo -D # 生成静态页面（如果需要），生成的文件将位于 public 目录下
+$ hugo server # Start a local server and preview the site content in its current state
+$ hugo new posts/my-post.md # Create a new article for editing
+$ hugo server -D # Enable local server and be able to preview articles with draft status (`draft: true`)
+$ hugo -D # Generate a static page (if required), the generated file will be located in the public directory
 ```
 
-创建文章时，创建格式为 `<分类>/<文件名>.<格式>`，上面给出的例子中，分类为 posts，文件名为 my-post，格式为 md （markdown）。创建文章后，默认会使用 [YAML front-matter](https://gohugo.io/content-management/front-matter/) 标记文章的一些元信息，请留意 draft 草稿状态的文章最终不会显示。
+When creating a post, create it in the format `<category>/<filename>. <format>`, in the example given above, the category is posts, the filename is my-post, and the format is md (markdown). After creating a post, some meta information of the post will be marked with [YAML front-matter](https://gohugo.io/content-management/front-matter/) by default, please note that posts in draft state will not be displayed eventually.
 
-若要获取 HUGO，请参考[官方文档给出的安装方式](https://gohugo.io/getting-started/installing)。
+To get HUGO, please refer to the [official documentation for installation](https://gohugo.io/getting-started/installing).
 
-## 文章内容指导建议
+## Suggestions for article content guidance
 
-您可以根据您小组的需求，在此博客中编写博文来分享文章，下面为文章内容方面相关的指导意见。
+You can write blog posts to share articles in this blog according to your group's needs, below are guidelines related to the content of the article.
 
-在发布您的文章时，建议使用标签来标记您文章所相关的主题，以便读者更方便的查阅您的文章。例如 `tags: ["成果公示"]` 或 `tags: ["指南文档", "CMake"]`。
+When posting your article, it is recommended to use tags to mark the topics related to your article to make it easier for readers to access your article. For example `tags: ["Results Announcement"]` or `tags: ["Guideline Document", "CMake"]`.
 
-由于绝大多数情况下，每篇文章均仅代表自己的个人观点，故也强烈建议在文章的元信息中附带作者信息，例如 `authors: ["张三"]`（可为多人）。
+Since in most cases each article represents only your own personal opinion, it is also highly recommended to include author information in the meta information of the article, e.g. `authors: ["Zhang San"]` (multiple people are allowed).
 
-## 改善此模板项目
+## Improve this template project
 
-此模板项目使用了 [geekblog](https://themes.gohugo.io/hugo-geekblog/) 主题（基于 `v0.5.3`，有改动），但并不一定完整的符合各个小组的需求，若你有任何建议，可以进行讨论并修改或提供更适合的主题。
+This template project uses the [geekblog](https://themes.gohugo.io/hugo-geekblog/) theme (based on `v0.5.3`, with changes), but it is not necessarily complete to meet the needs of each group, if you have any suggestions, you can discuss and modify or provide a more suitable theme.
